@@ -9,9 +9,11 @@ local prompts = {
   FixCode = 'Please fix the following code to make it work as intended.',
   FixError = 'Please explain the error in the following text and provide a solution.',
   BetterNamings = 'Please provide better names for the following variables and functions.',
-  Documentation = 'Please provide documentation for the following code.',
+  -- Documentation = 'Please provide documentation for the following code.',
   SwaggerApiDocs = 'Please provide documentation for the following API using Swagger.',
   SwaggerJsDocs = 'Please write JSDoc for the following API using Swagger.',
+  PHPDocBlock = 'Please write PHPDoc style comment following PSR standard.',
+  JSDocBlock = 'Please write JSDoc style comment for the selected code.',
   -- Text related prompts
   Summarize = 'Please summarize the following text.',
   Spelling = 'Please correct any grammar and spelling errors in the following text.',

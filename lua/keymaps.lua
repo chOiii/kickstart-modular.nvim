@@ -31,8 +31,13 @@ vim.keymap.set('n', '<C-l>', '<C-w><C-l>', { desc = 'Move focus to the right win
 vim.keymap.set('n', '<C-j>', '<C-w><C-j>', { desc = 'Move focus to the lower window' })
 vim.keymap.set('n', '<C-k>', '<C-w><C-k>', { desc = 'Move focus to the upper window' })
 
---
+-- Toggle the NvimTree file explorer
 vim.keymap.set('n', '<leader>e', '<cmd>NvimTreeToggle<cr>', { desc = 'Toggle Nvimtree Explorer' })
+
+-- Format Selection
+vim.keymap.set('v', '<leader>qf', vim.lsp.buf.format, { desc = 'Format Visual Selection', remap = false })
+
+-- Retain copied text in the clipboard after pasting
 vim.keymap.set('x', 'p', function()
   return 'pgv"' .. vim.v.register .. 'y'
 end, { remap = false, expr = true })
